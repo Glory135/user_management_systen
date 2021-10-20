@@ -1,0 +1,27 @@
+input[type='text'],
+input[type='email'],
+input[type='number'],
+select{
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+.btn-submit{
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 30px 2px;
+    cursor: pointer;
+    width: 100%;
+    background-color: blue;
+}
