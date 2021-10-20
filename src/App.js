@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './componenets/Header';
+import Footer from './componenets/Footer'
 import Home from './pages/Home'
 import AddEdit from './pages/AddEdit'
 import './App.css';
@@ -15,6 +16,7 @@ function App() {
           <Route path='/add' component={AddEdit} />
           <Route path='/update/:id' component={AddEdit} />
         </Switch>
+        <Footer />
       </div>
     </BrowserRouter>
   );
