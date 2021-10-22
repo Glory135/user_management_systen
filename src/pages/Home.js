@@ -11,7 +11,7 @@ const Home = () => {
     }, [])
 
     const getUsers = async () => {
-        const res = await axios.get('http://localhost:5000/users');
+        const res = await axios.get('https://user-management-system-mysql.herokuapp.com/users');
         if (res.status === 200) {
             setData(res.data);
         } else {
@@ -21,7 +21,7 @@ const Home = () => {
 
     const handleDelete = async (id) => {
         if (window.confirm('Are you sure ?')) {
-            const res = await axios.delete(`http://localhost:5000/user/${id}`);
+            const res = await axios.delete(`https://user-management-system-mysql.herokuapp.com/user/${id}`);
             if (res.status === 200) {
                 alert(res.data);
                 getUsers();

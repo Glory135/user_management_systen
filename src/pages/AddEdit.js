@@ -16,7 +16,7 @@ const AddEdit = () => {
     const { id } = useParams();
 
     const getSingleUser = async (id) => {
-        const res = await axios.get(`http://localhost:5000/user/${id}`);
+        const res = await axios.get(`https://user-management-system-mysql.herokuapp.com/user/${id}`);
         if (res.status === 200) {
             setState({ ...res.data[0] });
         }
@@ -29,13 +29,13 @@ const AddEdit = () => {
     }, [id])
 
     const addUser = async (data) => {
-        const res = await axios.post('http://localhost:5000/user', data);
+        const res = await axios.post('https://user-management-system-mysql.herokuapp.com/user', data);
         if (res.status === 200) {
             alert(res.data)
         }
     }
     const updateUser = async (data, id) => {
-        const res = await axios.put(`http://localhost:5000/user/${id}`, data);
+        const res = await axios.put(`https://user-management-system-mysql.herokuapp.com/user/${id}`, data);
         if (res.status === 200) {
             alert('updated successfully')
         }
