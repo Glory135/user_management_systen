@@ -32,6 +32,7 @@
 
 @media(max-width:500px){
     .header p{
+        font-size: 13px;
         float: none;
         display: block;
         text-align: left;
